@@ -1,0 +1,11 @@
+def simple_interest(principal, years, gender, senior):
+    if senior == 'y':
+        roi = 15
+    elif gender == 'm':
+        roi = 12
+    else:
+        roi = 10
+    interest = (principal * roi * years) / 100
+    print("Interest:", int(interest))
+
+simple_interest(200000, 3, 'm', 'n')
