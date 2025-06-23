@@ -1,0 +1,6 @@
+from itertools import permutations
+
+num = "123"
+unique = set(permutations(num))
+for p in unique:
+    print("".join(p))
