@@ -1,1 +1,5 @@
+def list_difference(a, b):
+    return list(set(a) - set(b))
+
+print(list_difference([1, 2, 3], [2, 4])) 
 
