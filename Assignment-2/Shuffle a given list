@@ -1,0 +1,6 @@
+import random
+def shuffle_list(lst):
+    random.shuffle(lst)
+    return lst
+
+print(shuffle_list([1, 2, 3, 4])) 
