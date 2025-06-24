@@ -1,0 +1,4 @@
+def remove_even(lst):
+    return [x for x in lst if x % 2 != 0]
+
+print(remove_even([1, 2, 3, 4])) 
