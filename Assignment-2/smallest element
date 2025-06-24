@@ -1,1 +1,5 @@
+def kth_smallest(lst, k):
+    return sorted(lst)[k - 1]
+
+print(kth_smallest([4, 1, 7, 3, 9], 3)) 
 
