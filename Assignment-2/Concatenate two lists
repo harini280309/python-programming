@@ -1,0 +1,4 @@
+def concatenate_lists(a, b):
+    return a + b
+
+print(concatenate_lists([1, 2], [3, 4]))  
