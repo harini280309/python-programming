@@ -1,0 +1,11 @@
+def is_prime(n):
+    if n < 2: return False
+    for i in range(2, int(n**0.5)+1):
+        if n % i == 0:
+            return False
+    return True
+
+def count_composites(arr):
+    return sum(1 for x in arr if x > 1 and not is_prime(x))
+
+print(count_composites([4,5,6,7,8]))  # 3 (4,6,8)
