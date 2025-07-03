@@ -1,0 +1,12 @@
+from collections import Counter
+
+def freq_and_highest(arr):
+    cnt = Counter(arr)
+    most_elem, most_freq = cnt.most_common(1)[0]
+    return cnt, most_elem, most_freq
+
+# Example
+arr = [1,2,2,3,3,3,4,4]
+cnt, elem, freq = freq_and_highest(arr)
+print(cnt)             # Counter({3: 3, 2: 2, 4: 2, 1: 1})
+print(elem, freq)      # 3 3
