@@ -1,0 +1,5 @@
+def is_lucky_number(n):
+    s = str(n)
+    return len(set(s)) == len(s)
+
+print(is_lucky_number(983), is_lucky_number(9838))  # True False
