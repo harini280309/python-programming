@@ -1,0 +1,7 @@
+import string
+
+def count_special(s):
+    return sum(1 for ch in s if not ch.isalnum() and not ch.isspace())
+
+text = "Modi Birthday @ September 17, #&$% is the wishes code for him."
+print(count_special(text))  # 5
