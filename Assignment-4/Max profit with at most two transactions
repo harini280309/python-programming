@@ -1,0 +1,11 @@
+def max_profit(prices):
+    t1_cost = t2_cost = float('inf')
+    t1_prof = t2_prof = 0
+    for p in prices:
+        t1_cost = min(t1_cost, p)
+        t1_prof = max(t1_prof, p - t1_cost)
+        t2_cost = min(t2_cost, p - t1_prof)
+        t2_prof = max(t2_prof, p - t2_cost)
+    return t2_prof
+
+print(max_profit([3,3,5,0,0,3,1,4]))  # 6
