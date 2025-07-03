@@ -1,0 +1,6 @@
+from collections import Counter
+
+def repeated_elements(arr):
+    return [x for x,c in Counter(arr).items() if c > 1]
+
+print(repeated_elements([1,2,2,3,3,4]))  # [2,3]
