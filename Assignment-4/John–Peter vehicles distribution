@@ -1,0 +1,6 @@
+def peter_gets(m, n):
+    rem = m % n
+    lucky = rem % 2 == 0
+    return rem, lucky
+
+print(peter_gets(11, 3))  # (2, True)
