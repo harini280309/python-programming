@@ -1,0 +1,8 @@
+import math
+
+def is_perfect_square(n):
+    if n < 0: return False
+    sr = math.isqrt(n)
+    return sr*sr == n
+
+print(is_perfect_square(49), is_perfect_square(50))  # True False
