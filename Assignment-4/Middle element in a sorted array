@@ -1,0 +1,6 @@
+def mid_element(arr):
+    n = len(arr)
+    return arr[n//2] if n%2 else (arr[n//2-1], arr[n//2])
+
+print(mid_element([1,2,3,4,5]))  # 3
+print(mid_element([1,2,3,4]))    # (2,3)
