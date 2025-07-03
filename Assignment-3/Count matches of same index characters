@@ -1,0 +1,4 @@
+def count_index_matches(s1, s2):
+    return sum(1 for a, b in zip(s1, s2) if a == b)
+
+print(count_index_matches("what", "watch"))  # 1 ("w")
