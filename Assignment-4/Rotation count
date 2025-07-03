@@ -1,0 +1,4 @@
+def rotation_count(arr):
+    return min(range(len(arr)), key=lambda i: arr[i])
+
+print(rotation_count([7,0,1,4,4,5,6]))  # 0 since min is 0 at index 1
