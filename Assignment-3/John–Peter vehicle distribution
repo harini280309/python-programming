@@ -1,0 +1,6 @@
+def peter_gets(m, n):
+    rem = m % n
+    return rem, "luckier" if rem % 2 == 0 else "not luckier"
+
+print(peter_gets(10, 3))  # (1, "not luckier")
+print(peter_gets(11, 3))  # (2, "luckier")
